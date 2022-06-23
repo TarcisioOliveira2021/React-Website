@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project is using 
+- Stack Components.
+- ReactScroll.
+- ReactRouter.
+
+## About Styled Components
+To use it correctly with vscode you can install the "vscode-styled-components" extension.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
