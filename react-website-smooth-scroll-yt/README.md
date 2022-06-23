@@ -3,9 +3,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Project is using 
-- Stack Components.
-- ReactScroll.
-- ReactRouter.
+- Styled Components.
+- React Scroll.
+- React Router.
+- React icons.
+
 
 ## About Styled Components
 To use it correctly with vscode you can install the "vscode-styled-components" extension.
