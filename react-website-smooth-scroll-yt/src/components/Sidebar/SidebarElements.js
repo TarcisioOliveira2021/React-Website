@@ -37,7 +37,7 @@ export const Icon = styled.div`
 
 export const SidebarWrapper = styled.div`
     color: #fff;
-    padding-top: 150px;
+    padding-top: 150px;   
 `
 
 export const SidebarMenu = styled.ul`
