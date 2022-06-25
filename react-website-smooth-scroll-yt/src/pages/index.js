@@ -5,6 +5,7 @@ import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from '../components/InfoSection/Data';
 import Services from '../components/Services';
+import Footer from '../components/Footer';
 
 export const Home = () => {
     //Setando variável e função que vai controlar a abertura do menu.
@@ -25,6 +26,7 @@ export const Home = () => {
             <InfoSection {...homeObjThree} />
             <Services />
             <InfoSection {...homeObjFour} />
+            <Footer />
         </>
     )
 };
