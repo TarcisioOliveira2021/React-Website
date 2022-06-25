@@ -11,7 +11,7 @@ import {
     NavBtnLink
 } from './NavbarElements'
 import { FaBars } from 'react-icons/fa'
-
+import { IconContext } from 'react-icons/lib'
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false)
@@ -30,37 +30,38 @@ const Navbar = ({ toggle }) => {
 
     return (
         <>
+            <IconContext.Provider value={{ color: '#fff' }}>
+                <Nav scrollNav={scrollNav}>
+                    <NavbarContainer>
+                        <NavLogo to="/">dolla</NavLogo>
+                        <MobileIcon onClick={toggle}>
+                            <FaBars />
+                        </MobileIcon>
+                        <NavMenu>
+                            <NavItem>
+                                <NavLinks to="about">About</NavLinks>
+                            </NavItem>
 
-            <Nav scrollNav={scrollNav}>
-                <NavbarContainer>
-                    <NavLogo to="/">dolla</NavLogo>
-                    <MobileIcon onClick={toggle}>
-                        <FaBars />
-                    </MobileIcon>
-                    <NavMenu>
-                        <NavItem>
-                            <NavLinks to="about">About</NavLinks>
-                        </NavItem>
+                            <NavItem>
+                                <NavLinks to="discover">Discover</NavLinks>
+                            </NavItem>
 
-                        <NavItem>
-                            <NavLinks to="discover">Discover</NavLinks>
-                        </NavItem>
+                            <NavItem>
+                                <NavLinks to="services">Services</NavLinks>
+                            </NavItem>
 
-                        <NavItem>
-                            <NavLinks to="services">Services</NavLinks>
-                        </NavItem>
+                            <NavItem>
+                                <NavLinks to="signup">Sign up</NavLinks>
+                            </NavItem>
+                        </NavMenu>
 
-                        <NavItem>
-                            <NavLinks to="signup">Sign up</NavLinks>
-                        </NavItem>
-                    </NavMenu>
+                        <NavBtn>
+                            <NavBtnLink to="/signin">Sing In</NavBtnLink>
+                        </NavBtn>
 
-                    <NavBtn>
-                        <NavBtnLink to="/signin">Sing In</NavBtnLink>
-                    </NavBtn>
-
-                </NavbarContainer>
-            </Nav>
+                    </NavbarContainer>
+                </Nav>
+            </IconContext.Provider>
         </>
     )
 }
