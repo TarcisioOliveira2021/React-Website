@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar"
 import Navbar from "../components/Navbar"
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
-import { homeObjOne } from '../components/InfoSection/Data';
+import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from '../components/InfoSection/Data';
 
 export const Home = () => {
     //Setando variável e função que vai controlar a abertura do menu.
@@ -20,6 +20,9 @@ export const Home = () => {
             <Navbar toggle={toggle} />
             <HeroSection />
             <InfoSection {...homeObjOne} />
+            <InfoSection {...homeObjTwo} />
+            <InfoSection {...homeObjThree} />
+            <InfoSection {...homeObjFour} />
         </>
     )
 };
