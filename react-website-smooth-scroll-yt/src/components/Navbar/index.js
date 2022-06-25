@@ -29,7 +29,6 @@ const Navbar = ({ toggle }) => {
         window.addEventListener('scroll', changeNav)
     }, [])
 
-
     // Smooth Top Scroll
     const toggleHome = () => {
         scroll.scrollToTop();
