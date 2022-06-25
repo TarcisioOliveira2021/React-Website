@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { animateScroll as scroll } from 'react-scroll'
 import {
     Nav,
     NavbarContainer,
@@ -28,12 +29,18 @@ const Navbar = ({ toggle }) => {
         window.addEventListener('scroll', changeNav)
     }, [])
 
+
+    // Smooth Top Scroll
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    }
+
     return (
         <>
             <IconContext.Provider value={{ color: '#fff' }}>
                 <Nav scrollNav={scrollNav}>
                     <NavbarContainer>
-                        <NavLogo to="/">dolla</NavLogo>
+                        <NavLogo to="/" onClick={toggleHome}>dolla</NavLogo>
                         <MobileIcon onClick={toggle}>
                             <FaBars />
                         </MobileIcon>
