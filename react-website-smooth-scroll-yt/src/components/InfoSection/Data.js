@@ -60,7 +60,7 @@ export const homeObjFour = {
     buttonLabel: 'Start now',
     imgStart: false,
     img: require('../../images/svg-4.svg').default,
-    alt: 'Signup',
+    alt: 'signup',
     dark: false,
     primary: false,
     darkText: false
