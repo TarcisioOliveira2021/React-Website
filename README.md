@@ -1,5 +1,5 @@
 # React-Website
-[Website desenvolvido usando react](https://react-website-6wfiyfmdq-tarcisiooliveira2021.vercel.app/)
+Website desenvolvido usando react
 
 ## Andamento
 Concluido
