@@ -106,7 +106,6 @@ const Navbar = ({ toggle }) => {
                                 >Sign up
                                 </NavLinks>
                             </NavItem>
-
                         </NavMenu>
 
                         <NavBtn>
