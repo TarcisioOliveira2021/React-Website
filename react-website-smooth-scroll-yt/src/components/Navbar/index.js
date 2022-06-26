@@ -44,21 +44,69 @@ const Navbar = ({ toggle }) => {
                             <FaBars />
                         </MobileIcon>
                         <NavMenu>
+
+                            {/* Linkados com o Data da InfoSection */}
                             <NavItem>
-                                <NavLinks to="about">About</NavLinks>
+                                <NavLinks
+                                    to="analytics"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}
+                                >
+                                    Analytics
+                                </NavLinks>
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to="discover">Discover</NavLinks>
+                                <NavLinks
+                                    to="freedom"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}
+                                >
+                                    Freedom
+                                </NavLinks>
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to="services">Services</NavLinks>
+                                <NavLinks
+                                    to="investment"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}
+                                >
+                                    Investment
+                                </NavLinks>
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to="signup">Sign up</NavLinks>
+                                <NavLinks to="services"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}
+                                >Services
+                                </NavLinks>
                             </NavItem>
+
+                            <NavItem>
+                                <NavLinks to="signup"
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}
+                                >Sign up
+                                </NavLinks>
+                            </NavItem>
+
                         </NavMenu>
 
                         <NavBtn>

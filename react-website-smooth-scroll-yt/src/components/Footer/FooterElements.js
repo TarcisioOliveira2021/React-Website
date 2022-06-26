@@ -80,7 +80,7 @@ export const SocialMediaWrap = styled.div`
     margin: 40px auto 0 auto;
 
 
-    @media screen and (max-width: 820){
+    @media screen and (max-width: 820px){
         flex-direction: column;
     }
 `
