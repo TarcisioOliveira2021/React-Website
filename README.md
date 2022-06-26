@@ -2,7 +2,7 @@
 Website desenvolvido usando react
 
 ## Andamento
-Em desenvolvimento
+Concluido
 
 ## Link 
 https://www.youtube.com/watch?v=Nl54MJDR2p8&list=PLDNbRr4taSNLNyQ5lTTMzOnFwCu0JODLq&index=1
