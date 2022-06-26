@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
     min-height: 692px;
@@ -35,7 +35,8 @@ export const Icon = styled(Link)`
     color: #fff;
     font-weight: 700;
     font-size: 32px;
-
+    cursor: pointer;
+    
     @media screen and (max-width: 480px){
         margin-left: 16px;
         margin-top: 8px;
@@ -99,6 +100,11 @@ export const FormButton = styled.button`
     color: #fff;
     font-size: 20px;
     cursor: pointer;
+
+    &:hover{
+        background: #018a52;
+        cursor: pointer;
+    }
 `
 
 export const Text = styled.span`
@@ -106,5 +112,11 @@ export const Text = styled.span`
     margin-top: 24px;
     color: #fff;
     font-size: 14px;
+    cursor: pointer;
+
+    &:hover{
+        color: #018a52;
+        cursor: pointer;
+    }
 `
 
